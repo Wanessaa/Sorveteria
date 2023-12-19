@@ -1,0 +1,38 @@
+/* Estilo para o contêiner principal */
+.cardapio {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Escolha uma fonte adequada */
+    background-color: #f2f2f2; /* Cor de fundo do contêiner principal */
+}
+
+/* Estilo para o título principal */
+.titulo-principal {
+    font-size: 36px;
+    color: #ff0000; /* Cor do texto vermelha */
+    text-align: center;
+}
+
+/* Estilo para os títulos de seção */
+.titulo-secao {
+    font-size: 24px;
+    color: #333; /* Cor do texto preta */
+    margin-top: 20px; /* Espaçamento superior entre os títulos de seção */
+}
+
+/* Estilo para a lista de sabores, produtos em geral e complementos */
+.lista-sabores,
+.lista-produtos,
+.lista-complementos {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+}
+
+/* Estilo para os itens de sabor, produtos em geral e complementos */
+.item-sabor,
+.item-produto,
+.item-complemento {
+    font-size: 18px;
+    color: #444; /* Cor do texto mais escura */
+    margin: 5px 0; /* Espaçamento vertical entre os itens */
+}

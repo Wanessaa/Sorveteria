@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.google.com/specimen/Poppins?query=Poppins');
+
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    font-size: 100%;
+
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    padding: 24px;
+    background-color: FFFFFF;
+
+}
+
+nav ul li a {
+    color: black; /* Cor padrão para links não visitados */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+/* Seletor para links visitados */
+nav ul li a:visited {
+    color: black; /* Manter a mesma cor para links visitados */
+}
+
+.cabecalho-imagem{
+    height: 72px;
+    width:120px;
+}
+
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: 000000;
+    font-weight: 400;
+    font-size:18px;
+}
+
+
+
+.cabecalho-menu-botao-cadastrar{
+    background-color: #ff0000; /* Cor de fundo vermelha */
+    color: #fff; /* Cor do texto branca */
+    border: none;
+    cursor: pointer;
+    border-radius: 30px; /* Deixa o botão mais redondo */
+    padding: 10px 20px; /* Espaçamento interno dos itens do menu */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: inline-block; /* Permite ajustar o tamanho conforme o conteúdo */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+
+}
+
+
+.cabecalho-menu-botao-cadastrar:hover {
+    background-color: #cc0000; /* Cor de fundo vermelha mais escura ao passar o mouse */
+}
+
+
+
+
+
+/* Estilo para o botão "Entrar" */
+.cabecalho-menu-botao-entrar {
+    background-color: transparent; /* Fundo transparente */
+    color: #ff0000; /* Cor do texto vermelha */
+    border: 1px solid #ff0000; /* Borda vermelha */
+    cursor: pointer;
+    border-radius: 30px; /* Deixa o botão mais redondo */
+    padding: 10px 20px; /* Espaçamento interno dos itens do menu */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: inline-block; /* Permite ajustar o tamanho conforme o conteúdo */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor de fundo e cor do texto */
+}
+
+.cabecalho-menu-botao-entrar:hover {
+    background-color: #ff0000; /* Cor de fundo vermelha ao passar o mouse */
+    color: #fff; /* Cor do texto branca ao passar o mouse */
+}
+
+
+.conteudo-principal-escrito-botao {
+    background-color: #fff; /* Fundo transparente */
+    color: #ff0000; /* Cor do texto vermelha */
+    border: 1px solid #ff0000; /* Borda vermelha */
+    cursor: pointer;
+    border-radius: 30px; /* Deixa o botão mais redondo */
+    padding: 10px 20px; /* Espaçamento interno dos itens do menu */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: inline-block; /* Permite ajustar o tamanho conforme o conteúdo */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor de fundo e cor do texto */
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #ff0000; /* Cor de fundo vermelha ao passar o mouse */
+    color: #fff; /* Cor do texto branca ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+.conteudo {
+    margin-bottom:48px;
+    border-top: 0.4px solid #FFF2EF;
+
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-image: url('../assets/fundo-vermelho.png');
+    background-size: cover; /* Redimensionar a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    background-position: center center; /* Centralizar a imagem no elemento */
+}
+
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+
+}
+
+
+.conteudo-principal-escrito-titulo {  
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff
+}
+
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff
+}
+
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    background-size: cover; /* Redimensionar a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    background-position: center center; /* Centralizar a imagem no elemento */
+
+    gap: 32px;
+    padding: 90px 0px;
+}
+
+.conteudo-secundario-escrito-texto{
+    color: #ff0000;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 36px;
+   
+
+}
+
+
+.conteudo-secundario-escrito-botao {
+    background-color: #ff0000;
+    color: #fff; /* Cor do texto vermelha */
+    border: 1px solid #ff0000; /* Borda vermelha */
+    cursor: pointer;
+    border-radius: 30px; /* Deixa o botão mais redondo */
+    padding: 10px 20px; /* Espaçamento interno dos itens do menu */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: inline-block; /* Permite ajustar o tamanho conforme o conteúdo */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor de fundo e cor do texto */
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #ff0000; /* Cor de fundo vermelha ao passar o mouse */
+    color: #fff; /* Cor do texto branca ao passar o mouse */
+}
+
+
+
+.lancamentos{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.imagem-sorvete{
+    height: 416;
+    width: calc((100%/3) - 24px);
+}
+
+.sorvetes-1 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.sorvetes-2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.fale-conosco{
+    text-align: center; 
+    background-image: url('../assets/fundo-vermelho.png');
+    background-size: cover; /* Redimensionar a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    background-position: center center; /* Centralizar a imagem no elemento */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0px;
+  
+} 
+
+.fale-conosco__header {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.fale-conosco__form {
+    width: 630px;
+}
+
+.localizacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+   
+}
+
+.fale-conosco__row-input {
+    display: flex;
+}
+

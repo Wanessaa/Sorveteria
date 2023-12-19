@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content=" Sorveteria com diversas sabores sem igual">
+    <title>Doce Mel - Sorvetes</title>
+    <link rel = "stylesheet" type = "text/css" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        function redirecionarParaCardapio() {
+            window.location.href = "cardapio.html";
+        }
+
+        function redirecionarParaLogin() {
+            window.location.href = "login.html";
+        }
+
+        function redirecionarParaCadastro() {
+            window.location.href = "cadastro.html";
+        }
+    </script>
+
+
+    <header class = 'cabecalho'>
+        <img class = "cabecalho-imagem" src = "assets/logo.png"  alt=" logo da doce mel escrito doce mel" >
+        <nav class = " cabecalho-menu">
+            <a  href="cardapio.html" class = "cabecalho-menu-item"> Cardápio </a>
+            <a  href="#lancamentos"class = "cabecalho-menu-item"> Lançamentos</a>
+            <a  href="mais-pedidos.html"class = "cabecalho-menu-item"> Mais pedidos</a>
+            <a  href="#fale-conosco" class = "cabecalho-menu-item"> Fale conosco</a>
+            <a  href="#localizacao"class = "cabecalho-menu-item"> Localização</a>
+            <button onclick="redirecionarParaLogin()" class = "cabecalho-menu-botao-entrar"> Entrar</button>
+            <button onclick="redirecionarParaCadastro()" class = "cabecalho-menu-botao-cadastrar"> Cadastrar</button>
+        </nav>
+    </header>
+    <main class = "conteudo">
+        <section class = "conteudo-principal">
+            <div class = "conteudo-principal-escrito">
+                <h1 class =  "conteudo-principal-escrito-titulo ">Doce Mel</h1> 
+                <h2 class="conteudo-principal-escrito-subtitulo">Sorveteria</h2>
+                <button onclick="redirecionarParaCardapio()" class = "conteudo-principal-escrito-botao"> Conheça nossos sabores</button>
+            </div>
+                <img class = "conteudo-principal-imagem" src = "assets/sorvete-principal.png" alt = "moça branca com cabelos compridos segurando um sorvete com camisa branca">
+        </section>
+        <section class = "conteudo-secundario">
+            <div>
+                <img class = "conteudo-secundario-imagem" src = "assets/moca-sorvete.png" alt = "moça branca com cabelos compridos segurando um sorvete com camisa branca">
+               
+            </div>
+            <div>
+                <h1 class = "conteudo-secundario-escrito-texto"> Conheça nossa linha completa de produtos</h1>
+                <button onclick="redirecionarParaCardapio()" class = "conteudo-secundario-escrito-botao"> Ver todos os produtos</button>
+        </section>
+    </main>
+    <section id = "lancamentos"  class = "lancamentos">
+        <div>
+            <h2 class = "lancamentos-botao">Lançamentos</h2>
+            <button class="lancamento-titulo">Veja os mais pedidos</button>
+        </div>
+        <div class="sorvetes-1">
+            <img class = "imagem-sorvete" src="assets/acai-com-ninho.png" alt=" sorvete de acai com ninho em cores roxo e branco">
+            <img class = "imagem-sorvete" src="assets/anastasia.png" alt="sorvete anastasia na cores branco e vermelho">
+            <img class = "imagem-sorvete" src="assets/chiclete-com-banana.png" alt="sorvete chiclete com banana nas cores branco e rosa">
+        </div>
+        <div class="sorvetes-2">
+            <img class = "imagem-sorvete" src="assets/floresta-negra.png" alt="sorvete de floresta-negra cores marrom e vermelho">
+            <img class = "imagem-sorvete" src="assets/snickers.png" alt="sorvete de snickers cores marrom e amarelo">
+            <img class = "imagem-sorvete" src="assets/tentacao.png" alt="sorvete de tentacao cores marrom e rosa">
+        </div>
+    </section>
+    <section id = "fale-conosco" class = "fale-conosco">
+        <header class="fale-conosco__header">
+            <h1 class=" fale-conosco-titulo">Vamos conversar?</h1>
+            <h2 class=" fale-conosco-subtitulo">Este é o nosso espaço, e queremos que você se sinta em casa aqui! Sinta-se à vontade para nos mandar uma mensagem, perguntar, elogiar. Estamos aqui para ouvir e responder</h2>
+        </header>
+        <div class="fale-conosco__form">
+            <form action="processar_formulario.php" method="post">
+                <div class="fale-conosco__row-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+            
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+            
+                </div>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </div>  
+    </section>
+    <footer id = "localizacao"  class="localizacao">
+        <div>
+            <img src="assets/doce-mel-localizacao.png" alt="sorvete de tentacao cores marrom e rosa">
+        </div>
+        <div class="info">
+            <h1>Saiba onde nos encontrar</h1>
+            <p>Rua Inácio Correia de Melo, Nº 26, Boa Vista, Garanhuns</p>
+            <div class="contact-info">
+                <img class="rodape-terciario-imagem" src="assets/instagram.png" alt="simbolo instagram" height="42" width="42">
+                <p>55 87 8118-0754</p>
+                <img class="rodape-terciario-imagem" src="assets/whatsApp.png" alt="simbolo whatsApp" height="42" width="42">
+                <p>docemelgus</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    height: 100vh;
+    background-color: #FFFBE5;
+}
+
+.left {
+    background-color: #F4CC0A;
+}
+
+.right {
+}
+
+.left, .right {
+    width: 50%;
+    padding: 64px;
+}

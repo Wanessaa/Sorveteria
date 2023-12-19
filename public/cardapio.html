@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" type="text/css" href="styles/cardapio.css">
+</head>
+<body>
+    <script>
+        function redirecionarParaCardapio() {
+            window.location.href = "cardapio.html";
+        }
+
+        function redirecionarParaLogin() {
+            window.location.href = "login.html";
+        }
+
+        function redirecionarParaCadastro() {
+            window.location.href = "cadastro.html";
+        }
+    </script>
+    <header class = 'cabecalho'>
+        <img class = "cabecalho-imagem" src = "assets/logo.png"  alt=" logo da doce mel escrito doce mel" >
+        <nav class = " cabecalho-menu">
+            <a  href="index.html" class = "cabecalho-menu-item"> Home </a>
+            <a  href="#lancamentos"class = "cabecalho-menu-item"> Lançamentos</a>
+            <a  href="mais-pedidos.html"class = "cabecalho-menu-item"> Mais pedidos</a>
+            <a  href="#fale-conosco" class = "cabecalho-menu-item"> Fale conosco</a>
+            <a  href="#localizacao"class = "cabecalho-menu-item"> Localização</a>
+            <button onclick="redirecionarParaLogin()" class = "cabecalho-menu-botao-entrar"> Entrar</button>
+            <button onclick="redirecionarParaCadastro()" class = "cabecalho-menu-botao-cadastrar"> Cadastrar</button>
+        </nav>
+    </header>
+
+
+
+
+    <div class="cardapio">
+        <h1 class="titulo-principal">Cardápio</h1>
+        <button onclick="addCategoria()">add categoria</button> 
+        <div id="sabores"></div>
+      
+    </div>
+   
+<script src="js/categoria.js"></script> 
+</body>
+</html>
